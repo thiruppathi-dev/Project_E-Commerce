@@ -1,16 +1,38 @@
-# React + Vite
+# 🛍️ Ecamus - React E-Commerce Web App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Ecamus is a simple and responsive **React-based E-commerce web app** built using **Vite**.  
+Users can browse products, add them to the cart, and complete payments through GPay, Card, or Cash on Delivery.  
+The design is clean, user-friendly, and inspired by Flipkart’s modern shopping interface.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
+- Add and remove items from the cart  
+- Automatic total price calculation  
+- Multiple payment options (GPay / Card / COD)  
+- Responsive and modern UI  
+- Smooth navigation using React Router
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🧩 Tech Stack
+- **Frontend:** React.js, JavaScript (ES6+)
+- **Styling:** CSS3, Flexbox
+- **Routing:** React Router DOM
+- **Build Tool:** Vite
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ⚙️ Setup
+```bash
+# Clone the repo
+git clone https://github.com/your-username/ecamus.git
+
+# Move into folder
+cd ecamus
+
+# Install dependencies
+npm install
+
+# Start the app
+npm run dev
