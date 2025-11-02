@@ -1,0 +1,185 @@
+/* 🌈 Background Wrapper */
+.payment-wrapper {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* 💳 Main Payment Card */
+.payment-container {
+  background: #fff;
+  width: 100%;
+  max-width: 700px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 40px 50px;
+  transition: all 0.3s ease;
+}
+
+.payment-container:hover {
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* 🔖 Header */
+.payment-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2e2e2e;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.payment-title::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #2874f0, #56ccf2);
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* 🧾 Order Summary */
+.payment-summary {
+  background: #f7f9fc;
+  border: 1px solid #e3e7ef;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.payment-summary h3 {
+  color: #333;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.payment-summary p {
+  margin: 6px 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+.payment-summary strong {
+  color: #2874f0;
+}
+
+/* 💰 Payment Options */
+.payment-methods {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+}
+
+.payment-methods button {
+  flex: 1;
+  background: #f2f4f8;
+  color: #333;
+  border: 2px solid transparent;
+  border-radius: 12px;
+  padding: 14px 18px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.payment-methods button:hover {
+  border-color: #2874f0;
+  background: #eaf2ff;
+  color: #2874f0;
+  transform: translateY(-3px);
+}
+
+/* 🟦 Active Button Style */
+.payment-methods .selected {
+  background: linear-gradient(135deg, #2874f0, #56ccf2);
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(40, 116, 240, 0.4);
+  border: none;
+  transform: scale(1.02);
+}
+
+/* 🧾 Payment Form */
+.payment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.payment-form input {
+  padding: 12px 15px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  transition: 0.3s ease;
+  outline: none;
+}
+
+.payment-form input:focus {
+  border-color: #2874f0;
+  box-shadow: 0 0 8px rgba(40, 116, 240, 0.3);
+}
+
+/* ✅ Confirm Button */
+.confirm-btn {
+  margin-top: 10px;
+  background: linear-gradient(90deg, #2874f0, #56ccf2);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 14px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(40, 116, 240, 0.3);
+}
+
+.confirm-btn:hover {
+  background: linear-gradient(90deg, #1a5edb, #3bb4e5);
+  box-shadow: 0 6px 16px rgba(40, 116, 240, 0.5);
+  transform: translateY(-2px);
+}
+
+/* 💚 Success Message (Optional after payment) */
+.payment-success {
+  text-align: center;
+  background-color: #e8f5e9;
+  color: #2e7d32;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  margin-top: 20px;
+  box-shadow: 0 2px 10px rgba(46, 125, 50, 0.15);
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  .payment-container {
+    padding: 25px 20px;
+  }
+
+  .payment-methods {
+    flex-direction: column;
+  }
+
+  .payment-methods button {
+    width: 100%;
+  }
+
+  .payment-title {
+    font-size: 1.7rem;
+  }
+
+  .confirm-btn {
+    font-size: 1rem;
+  }
+}

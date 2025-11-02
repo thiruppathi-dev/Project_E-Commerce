@@ -1,0 +1,11 @@
+.about-container {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.about-container img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 10px;
+}
